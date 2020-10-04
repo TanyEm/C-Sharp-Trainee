@@ -13,6 +13,11 @@ namespace C_Sharp_Trainee
             base.Display1();
         }
 
+        public void Display2()
+        {
+            Console.WriteLine("ClassA Display2");
+        }
+
     }
 
     public class ClassB
@@ -21,10 +26,6 @@ namespace C_Sharp_Trainee
         public void Display1()
         {
             Console.WriteLine("ClassB Display1");
-        }
-        public void Display2()
-        {
-            Console.WriteLine("ClassB Display2");
         }
     }
 }
