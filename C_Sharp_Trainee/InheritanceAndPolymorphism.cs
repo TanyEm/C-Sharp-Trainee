@@ -3,7 +3,7 @@ namespace C_Sharp_Trainee
 {
     public class FirstClass
     {
-        public virtual void AAA()
+        public void AAA()
         {
             Console.WriteLine("FirstClass AAA");
         }
@@ -13,7 +13,7 @@ namespace C_Sharp_Trainee
             Console.WriteLine("FirstClass BBB");
         }
 
-        public void CCC()
+        public virtual void CCC()
         {
             Console.WriteLine("FirstClass CCC");
         }
@@ -21,7 +21,7 @@ namespace C_Sharp_Trainee
 
     public class SecondClass : FirstClass
     {
-        public override void AAA()
+        public virtual void AAA()
         {
             Console.WriteLine("SecondClass AAA");
         }
@@ -31,9 +31,22 @@ namespace C_Sharp_Trainee
             Console.WriteLine("SecondClass BBB");
         }
 
-        public void CCC()
+        public override void CCC()
         {
             Console.WriteLine("SecondClass CCC");
+        }
+    }
+
+    public class ThirdClass : SecondClass
+    {
+        public override void AAA()
+        {
+            Console.WriteLine("ThirdClass AAA");
+        }
+
+        public void CCC()
+        {
+            Console.WriteLine("ThirdClass CCC");
         }
     }
 }

@@ -35,19 +35,21 @@ namespace C_Sharp_Trainee
 
             /*
              * Here more practice with polymorphism and inheritance
+             * with virtual, override and new methods
              */
-            FirstClass firstClass = new FirstClass();
-            SecondClass secondClass = new SecondClass();
-            FirstClass newFirstClass = new SecondClass();
+            FirstClass a = new SecondClass();
+            FirstClass b = new ThirdClass();
+            SecondClass c = new ThirdClass();
 
-            firstClass.AAA(); firstClass.BBB(); firstClass.CCC();
+            Console.WriteLine("=================");
+            a.AAA(); a.BBB(); a.CCC();
             Console.WriteLine(" ");
 
-            secondClass.AAA(); secondClass.BBB(); secondClass.CCC();
+            b.AAA(); b.BBB(); b.CCC();
             Console.WriteLine(" ");
 
-            newFirstClass.AAA(); newFirstClass.BBB(); newFirstClass.CCC();
-            Console.WriteLine(" ");
+            c.AAA(); c.BBB(); c.CCC();
+            Console.WriteLine("=================");
 
             Console.ReadKey();
         }
