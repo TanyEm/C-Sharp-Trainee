@@ -5,13 +5,15 @@ namespace C_Sharp_Trainee
     {
         static void Main(string[] args)
         {
+            //Just to understand what overload is
             Overload overload = new Overload();
             overload.DisplayOverload(100);
             overload.DisplayOverload("method overloading");
             overload.DisplayOverload("method overloading", 100);
-
             overload.Display();
 
+            // More about overload and C# params
+            // More about references and values
             object[] objArray = { 100, "Akhil", 200.300 }; //Array 
             object obj = objArray; //Array as an object
             Console.WriteLine("Array");
@@ -30,6 +32,22 @@ namespace C_Sharp_Trainee
 
             ClassB b = new ClassB();
             b.Display1();
+
+            /*
+             * Here more practice with polymorphism and inheritance
+             */
+            FirstClass firstClass = new FirstClass();
+            SecondClass secondClass = new SecondClass();
+            FirstClass newFirstClass = new SecondClass();
+
+            firstClass.AAA(); firstClass.BBB(); firstClass.CCC();
+            Console.WriteLine(" ");
+
+            secondClass.AAA(); secondClass.BBB(); secondClass.CCC();
+            Console.WriteLine(" ");
+
+            newFirstClass.AAA(); newFirstClass.BBB(); newFirstClass.CCC();
+            Console.WriteLine(" ");
 
             Console.ReadKey();
         }
