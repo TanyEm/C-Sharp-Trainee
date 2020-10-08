@@ -5,33 +5,33 @@ namespace C_Sharp_Trainee
     {
         static void Main(string[] args)
         {
-            //Just to understand what overload is
-            Overload overload = new Overload();
-            overload.DisplayOverload(100);
-            overload.DisplayOverload("method overloading");
-            overload.DisplayOverload("method overloading", 100);
-            overload.Display();
+            ////Just to understand what overload is
+            //Overload overload = new Overload();
+            //overload.DisplayOverload(100);
+            //overload.DisplayOverload("method overloading");
+            //overload.DisplayOverload("method overloading", 100);
+            //overload.Display();
 
-            // More about overload and C# params
-            // More about references and values
-            object[] objArray = { 100, "Akhil", 200.300 }; //Array 
-            object obj = objArray; //Array as an object
-            Console.WriteLine("Array");
-            Overload.Display(objArray);
-            Console.WriteLine("Array cast to object");
-            Overload.Display((object)objArray);
-            Console.WriteLine("Array as an object");
-            Overload.Display(obj);
-            ///Let's go deeper :D
-            Console.WriteLine("Array as an object which cast to object");
-            Overload.Display((object[])obj);
+            //// More about overload and C# params
+            //// More about references and values
+            //object[] objArray = { 100, "Akhil", 200.300 }; //Array 
+            //object obj = objArray; //Array as an object
+            //Console.WriteLine("Array");
+            //Overload.Display(objArray);
+            //Console.WriteLine("Array cast to object");
+            //Overload.Display((object)objArray);
+            //Console.WriteLine("Array as an object");
+            //Overload.Display(obj);
+            /////Let's go deeper :D
+            //Console.WriteLine("Array as an object which cast to object");
+            //Overload.Display((object[])obj);
 
-            ClassA a = new ClassA();
-            a.Display1();
-            a.Display2();
+            //ClassA a = new ClassA();
+            //a.Display1();
+            //a.Display2();
 
-            ClassB b = new ClassB();
-            b.Display1();
+            //ClassB b = new ClassB();
+            //b.Display1();
 
             /*
              * Here more practice with polymorphism and inheritance
@@ -49,6 +49,11 @@ namespace C_Sharp_Trainee
             Console.WriteLine(" ");
 
             c.AAA(); c.BBB(); c.CCC();
+            Console.WriteLine("=================");
+
+            a.XXX();
+            Console.WriteLine(" ");
+            c.XXX();
             Console.WriteLine("=================");
 
             Console.ReadKey();

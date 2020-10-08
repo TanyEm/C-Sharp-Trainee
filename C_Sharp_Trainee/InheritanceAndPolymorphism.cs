@@ -17,6 +17,11 @@ namespace C_Sharp_Trainee
         {
             Console.WriteLine("FirstClass CCC");
         }
+
+        public virtual void XXX()
+        {
+            Console.WriteLine("FirstClass XXX");
+        }
     }
 
     public class SecondClass : FirstClass
@@ -35,6 +40,12 @@ namespace C_Sharp_Trainee
         {
             Console.WriteLine("SecondClass CCC");
         }
+
+        public override void XXX()
+        {
+            base.XXX();
+            Console.WriteLine("SecondClass XXX");
+        }
     }
 
     public class ThirdClass : SecondClass
@@ -47,6 +58,12 @@ namespace C_Sharp_Trainee
         public void CCC()
         {
             Console.WriteLine("ThirdClass CCC");
+        }
+
+        public override void XXX()
+        {
+            base.XXX();
+            Console.WriteLine("ThirdClass XXX");
         }
     }
 }
